@@ -1,0 +1,37 @@
+/* vars */
+$button-color: #53a582;
+
+body {
+  background-color: #c182d8;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .title {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 6rem;
+  }
+
+  .sub-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: regular;
+    font-size: 1rem;
+  }
+
+  .button {
+    background-color: $button-color;
+    color: #fff;
+    margin: 1vh 0;
+    padding: 2vh 1vw;
+    text-align: center;
+    border-radius: 3px;
+  }
+}

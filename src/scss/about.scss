@@ -1,0 +1,90 @@
+.about {
+  width: 85vw;
+  margin: 0 auto;
+
+  h2.title {
+    text-align: right;
+  }
+
+  .about-section {
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+
+    a {
+      /* this is for the resume button */
+      padding: 1vh 1vw;
+      background-color: $button-color;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+
+  .about-bottom {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+
+    .about-left,
+    .about-right {
+      width: 50%;
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+
+      h3.title {
+        font-size: 2rem;
+      }
+    }
+
+    .about-right {
+      margin-right: 10vw;
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 300px) and (max-width: 1024px) {
+  .about {
+    width: 95vw;
+    padding: 0;
+
+    h2.title {
+      width: 100%;
+      font-size: 4rem;
+    }
+
+    .about-section {
+      width: 85%;
+      margin: 0 auto;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .about-bottom {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+
+      h3.title {
+        margin: 0 auto;
+        padding-top: 3vh;
+        text-align: center;
+      }
+
+      .about-left,
+      .about-right {
+        width: 85%;
+        margin: 0 auto;
+
+        ul {
+          padding: 0;
+        }
+
+        li {
+          margin: 3vh 0;
+        }
+      }
+    }
+  }
+}
